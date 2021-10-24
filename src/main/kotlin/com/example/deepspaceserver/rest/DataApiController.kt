@@ -17,6 +17,6 @@ class DataApiController {
     fun test(): List<Message> = listOf(
         Message("Vladimir", 1256, "How are yo today?"),
         Message("Gleb", 8900, "Another message"),
-        Message("Anon #2", 6543, "Why am i an idiot?"),
+        Message("Anon #2", 6543, "Im not real!"),
     )
 }
