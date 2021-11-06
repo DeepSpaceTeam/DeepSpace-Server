@@ -20,4 +20,16 @@ class SiteController {
         model.addAttribute("rnd", Random.nextInt(-10000, 10000))
         return "index"
     }
+
+    @GetMapping("/terms")
+    @ApiOperation("Это условия пользования нашим приложением")
+    fun termsPage(): String {
+        return "terms"
+    }
+
+    @GetMapping("/privacy")
+    @ApiOperation("Политика конфиденциальности нашегор приложения")
+    fun privacyPage(): String {
+        return "privacy"
+    }
 }
